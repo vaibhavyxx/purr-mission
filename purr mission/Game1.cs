@@ -23,12 +23,15 @@ namespace purr_mission
         private SpriteBatch _spriteBatch;
         private Player player;
         private Bullets bullet;
+        private Alien alien;
+        private List<Alien> list_aliens;
 
         private Texture2D tex_cat;
         private Texture2D tex_alien;
         private Texture2D tex_bullet;
         private Vector2 vec_cat;
         private Vector2 vec_alien;
+        private Random rng;
 
         //to store for n amount of aliens
         private List<Vector2> vecList_aliens;
@@ -60,10 +63,14 @@ namespace purr_mission
             prevKb = Keyboard.GetState();
             vecList_aliens = new List<Vector2>();
             tex2dList_aliens = new List<Texture2D>();
+            list_aliens = new List<Alien>();
 
             //saves window dimensions for other classes to use
             windowHeight = _graphics.GraphicsDevice.Viewport.Height;
             windowWidth = _graphics.GraphicsDevice.Viewport.Width;
+
+            //to use this in randomizing enemies' position
+            rng = new Random();
           
             base.Initialize();
         }
@@ -78,7 +85,14 @@ namespace purr_mission
             for(int i=0; i< 5; i++)
             {
                 tex_alien = Content.Load<Texture2D>("alien");
-                tex2dList_aliens.Add(tex_alien);
+                //tex2dList_aliens.Add(tex_alien);
+                vec_alien = new Vector2(rng.Next(tex_alien.Width, windowWidth),         //to ensure that the alien loaded is visible on the screen 
+                                         rng.Next(tex_alien.Height, windowHeight));
+                vecList_aliens.Add(vec_alien);
+
+                //saves the data into alien list
+                alien = new Alien(tex_alien, vec_alien, windowHeight, windowWidth);
+                list_aliens.Add(alien);
             }
 
             player = new Player(tex_cat, vec_cat, windowWidth, windowHeight, 0);
@@ -108,9 +122,15 @@ namespace purr_mission
             currentKb = Keyboard.GetState();
 
             player.Update(gameTime);
+            
+            //to make all the aliens move
+            for(int i=0; i< list_aliens.Count; i++)
+            {
+                list_aliens[i].Update(gameTime);
+            }
 
             // BUG/// To ensure that this action happens once the ENTER key is pressed AND released
-            if(prevKb.IsKeyUp(Keys.Enter) && 
+            if( //prevKb.IsKeyUp(Keys.Enter) && 
                currentKb.IsKeyDown(Keys.Enter))
             {
                 //to ensure that bullet comes from player's position 
@@ -132,6 +152,11 @@ namespace purr_mission
 
             _spriteBatch.Begin();
             player.Draw(_spriteBatch);
+
+            for(int i=0; i < list_aliens.Count; i++)
+            {
+                list_aliens[i].Draw(_spriteBatch);
+            }
 
             //how to make an object shoot from itself?
             if (currentKb.IsKeyDown(Keys.Enter))

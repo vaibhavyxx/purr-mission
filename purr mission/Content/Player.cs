@@ -52,7 +52,6 @@ namespace purr_mission.Content
                 //brings sprite from top
                 position.Y = -asset.Height;
             }
-
             if ((position.X + asset.Width) < 0)
             {
                 //brings sprite from right
