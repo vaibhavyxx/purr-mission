@@ -1,0 +1,27 @@
+C:\Users\HP\Source\Repos\purr-mission\purr mission\bin\Debug\net6.0\Content\shoot.xnb
+C:\Users\HP\Source\Repos\purr-mission\purr mission\bin\Debug\net6.0\purr mission.exe
+C:\Users\HP\Source\Repos\purr-mission\purr mission\bin\Debug\net6.0\purr mission.deps.json
+C:\Users\HP\Source\Repos\purr-mission\purr mission\bin\Debug\net6.0\purr mission.runtimeconfig.json
+C:\Users\HP\Source\Repos\purr-mission\purr mission\bin\Debug\net6.0\purr mission.dll
+C:\Users\HP\Source\Repos\purr-mission\purr mission\bin\Debug\net6.0\purr mission.pdb
+C:\Users\HP\Source\Repos\purr-mission\purr mission\bin\Debug\net6.0\MonoGame.Framework.dll
+C:\Users\HP\Source\Repos\purr-mission\purr mission\bin\Debug\net6.0\runtimes\linux-x64\native\libSDL2-2.0.so.0
+C:\Users\HP\Source\Repos\purr-mission\purr mission\bin\Debug\net6.0\runtimes\linux-x64\native\libopenal.so.1
+C:\Users\HP\Source\Repos\purr-mission\purr mission\bin\Debug\net6.0\runtimes\osx\native\libSDL2.dylib
+C:\Users\HP\Source\Repos\purr-mission\purr mission\bin\Debug\net6.0\runtimes\osx\native\libopenal.1.dylib
+C:\Users\HP\Source\Repos\purr-mission\purr mission\bin\Debug\net6.0\runtimes\win-x64\native\SDL2.dll
+C:\Users\HP\Source\Repos\purr-mission\purr mission\bin\Debug\net6.0\runtimes\win-x64\native\soft_oal.dll
+C:\Users\HP\Source\Repos\purr-mission\purr mission\bin\Debug\net6.0\runtimes\win-x86\native\SDL2.dll
+C:\Users\HP\Source\Repos\purr-mission\purr mission\bin\Debug\net6.0\runtimes\win-x86\native\soft_oal.dll
+C:\Users\HP\Source\Repos\purr-mission\purr mission\obj\Debug\net6.0\purr mission.csproj.AssemblyReference.cache
+C:\Users\HP\Source\Repos\purr-mission\purr mission\obj\Debug\net6.0\purr mission.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\Source\Repos\purr-mission\purr mission\obj\Debug\net6.0\purr mission.AssemblyInfoInputs.cache
+C:\Users\HP\Source\Repos\purr-mission\purr mission\obj\Debug\net6.0\purr mission.AssemblyInfo.cs
+C:\Users\HP\Source\Repos\purr-mission\purr mission\obj\Debug\net6.0\purr mission.csproj.CoreCompileInputs.cache
+C:\Users\HP\Source\Repos\purr-mission\purr mission\obj\Debug\net6.0\purr mission.csproj.CopyComplete
+C:\Users\HP\Source\Repos\purr-mission\purr mission\obj\Debug\net6.0\purr mission.dll
+C:\Users\HP\Source\Repos\purr-mission\purr mission\obj\Debug\net6.0\refint\purr mission.dll
+C:\Users\HP\Source\Repos\purr-mission\purr mission\obj\Debug\net6.0\purr mission.pdb
+C:\Users\HP\Source\Repos\purr-mission\purr mission\obj\Debug\net6.0\purr mission.genruntimeconfig.cache
+C:\Users\HP\Source\Repos\purr-mission\purr mission\obj\Debug\net6.0\ref\purr mission.dll
+C:\Users\HP\Source\Repos\purr-mission\purr mission\bin\Debug\net6.0\Content\MarioSpriteSheet.xnb

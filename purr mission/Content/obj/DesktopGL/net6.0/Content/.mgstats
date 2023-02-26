@@ -1,0 +1,3 @@
+Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
+"C:/Users/HP/Source/Repos/purr-mission/purr mission/Content/MarioSpriteSheet.png","C:/Users/HP/Source/Repos/purr-mission/purr mission/Content/bin/DesktopGL/Content/MarioSpriteSheet.xnb","TextureProcessor","Texture2DContent",18495,50773,0.222162
+"C:/Users/HP/Source/Repos/purr-mission/purr mission/Content/shoot.png","C:/Users/HP/Source/Repos/purr-mission/purr mission/Content/bin/DesktopGL/Content/shoot.xnb","TextureProcessor","Texture2DContent",755,11089,0.2748534
