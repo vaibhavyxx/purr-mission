@@ -1,3 +1,7 @@
 Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
-"C:/Users/HP/Source/Repos/purr-mission/purr mission/Content/MarioSpriteSheet.png","C:/Users/HP/Source/Repos/purr-mission/purr mission/Content/bin/DesktopGL/Content/MarioSpriteSheet.xnb","TextureProcessor","Texture2DContent",18495,50773,0.222162
-"C:/Users/HP/Source/Repos/purr-mission/purr mission/Content/shoot.png","C:/Users/HP/Source/Repos/purr-mission/purr mission/Content/bin/DesktopGL/Content/shoot.xnb","TextureProcessor","Texture2DContent",755,11089,0.2748534
+"C:/Users/HP/source/repos/purr-mission/purr mission/Content/alien.png","C:/Users/HP/source/repos/purr-mission/purr mission/Content/bin/DesktopGL/Content/alien.xnb","TextureProcessor","Texture2DContent",25968,307285,0.2556813
+"C:/Users/HP/source/repos/purr-mission/purr mission/Content/arial-36-bold.spritefont","C:/Users/HP/source/repos/purr-mission/purr mission/Content/bin/DesktopGL/Content/arial-36-bold.xnb","FontDescriptionProcessor","SpriteFontContent",2065,136223,0.1876382
+"C:/Users/HP/source/repos/purr-mission/purr mission/Content/bullet.png","C:/Users/HP/source/repos/purr-mission/purr mission/Content/bin/DesktopGL/Content/bullet.xnb","TextureProcessor","Texture2DContent",1140,5085,0.1971971
+"C:/Users/HP/source/repos/purr-mission/purr mission/Content/cat.png","C:/Users/HP/source/repos/purr-mission/purr mission/Content/bin/DesktopGL/Content/cat.xnb","TextureProcessor","Texture2DContent",3878,36085,0.0046718
+"C:/Users/HP/source/repos/purr-mission/purr mission/Content/MarioSpriteSheet.png","C:/Users/HP/source/repos/purr-mission/purr mission/Content/bin/DesktopGL/Content/MarioSpriteSheet.xnb","TextureProcessor","Texture2DContent",18495,50773,0.0059063
+"C:/Users/HP/source/repos/purr-mission/purr mission/Content/shoot.png","C:/Users/HP/source/repos/purr-mission/purr mission/Content/bin/DesktopGL/Content/shoot.xnb","TextureProcessor","Texture2DContent",755,11089,0.0029012

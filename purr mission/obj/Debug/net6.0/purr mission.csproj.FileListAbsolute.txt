@@ -25,3 +25,7 @@ C:\Users\HP\Source\Repos\purr-mission\purr mission\obj\Debug\net6.0\purr mission
 C:\Users\HP\Source\Repos\purr-mission\purr mission\obj\Debug\net6.0\purr mission.genruntimeconfig.cache
 C:\Users\HP\Source\Repos\purr-mission\purr mission\obj\Debug\net6.0\ref\purr mission.dll
 C:\Users\HP\Source\Repos\purr-mission\purr mission\bin\Debug\net6.0\Content\MarioSpriteSheet.xnb
+C:\Users\HP\source\repos\purr-mission\purr mission\bin\Debug\net6.0\Content\alien.xnb
+C:\Users\HP\source\repos\purr-mission\purr mission\bin\Debug\net6.0\Content\arial-36-bold.xnb
+C:\Users\HP\source\repos\purr-mission\purr mission\bin\Debug\net6.0\Content\cat.xnb
+C:\Users\HP\source\repos\purr-mission\purr mission\bin\Debug\net6.0\Content\bullet.xnb

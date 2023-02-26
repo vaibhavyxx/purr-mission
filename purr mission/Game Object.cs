@@ -18,6 +18,7 @@ namespace purr_mission
 
         public Vector2 Position
         {
+            set { position = value; }
             get { return position; }
         }
 

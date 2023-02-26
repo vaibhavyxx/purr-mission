@@ -1,6 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using purr_mission.Content;
 using System;
 using System.Collections.Generic;
 
@@ -14,11 +15,18 @@ namespace purr_mission
     }
     public class Game1 : Game
     {
+        //window dimensions
+        private int windowWidth;
+        private int windowHeight;
+
         private GraphicsDeviceManager _graphics;
         private SpriteBatch _spriteBatch;
+        private Player player;
+        private Bullets bullet;
 
         private Texture2D tex_cat;
         private Texture2D tex_alien;
+        private Texture2D tex_bullet;
         private Vector2 vec_cat;
         private Vector2 vec_alien;
 
@@ -36,9 +44,9 @@ namespace purr_mission
         private double widthSingleSprite;
         #endregion
 
-        //keyboard input
-        private KeyboardState prevKb;
-        private KeyboardState currentKb;
+        //keyboard input for all the classes to get this data
+        public KeyboardState prevKb;
+        public KeyboardState currentKb;
 
         public Game1()
         {
@@ -52,6 +60,10 @@ namespace purr_mission
             prevKb = Keyboard.GetState();
             vecList_aliens = new List<Vector2>();
             tex2dList_aliens = new List<Texture2D>();
+
+            //saves window dimensions for other classes to use
+            windowHeight = _graphics.GraphicsDevice.Viewport.Height;
+            windowWidth = _graphics.GraphicsDevice.Viewport.Width;
           
             base.Initialize();
         }
@@ -60,6 +72,7 @@ namespace purr_mission
         {
             _spriteBatch = new SpriteBatch(GraphicsDevice);
             tex_cat = Content.Load<Texture2D>("cat");
+            tex_bullet = Content.Load<Texture2D>("bullet");
 
             //so that we can use 5 aliens at the same time
             for(int i=0; i< 5; i++)
@@ -68,6 +81,8 @@ namespace purr_mission
                 tex2dList_aliens.Add(tex_alien);
             }
 
+            player = new Player(tex_cat, vec_cat, windowWidth, windowHeight, 0);
+            bullet = new Bullets(tex_bullet, player.Position);
             #region
             //ISSUE W ANIMATION
             //Loading sprite sheet and filling in sprite data
@@ -92,10 +107,15 @@ namespace purr_mission
                 Exit();
             currentKb = Keyboard.GetState();
 
+            player.Update(gameTime);
+
             // BUG/// To ensure that this action happens once the ENTER key is pressed AND released
-            if(//prevKb.IsKeyUp(Keys.Enter) && 
+            if(prevKb.IsKeyUp(Keys.Enter) && 
                currentKb.IsKeyDown(Keys.Enter))
             {
+                //to ensure that bullet comes from player's position 
+                bullet.Position = player.Position;
+                bullet.Update(gameTime);
                 //add the animation
                 //UpdateAnimation(gameTime);
             }
@@ -111,7 +131,13 @@ namespace purr_mission
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
             _spriteBatch.Begin();
+            player.Draw(_spriteBatch);
 
+            //how to make an object shoot from itself?
+            if (currentKb.IsKeyDown(Keys.Enter))
+            {
+                bullet.Draw(_spriteBatch);
+            }
             //DrawPlayer(SpriteEffects.FlipVertically);
             _spriteBatch.End();
             base.Draw(gameTime);
