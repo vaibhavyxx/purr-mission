@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "42buS3cbSG32ptPKlYyM1n/ORVSaywpJZ0ewU/tDnKM0BUe5Vhq4mPxOc0wIitAdj6pioePIIjHTawbTkOY8TQ==",
+  "dgSpecHash": "vDIyjBCmeTs1z/6wAU+DbvqsVaGuFpGIybAClKUkITmeuc9Xb/EBbuGKxaiy91g1Dtq1X0M7yhrHTJdx45PU4Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\HP\\source\\repos\\purr-mission\\purr mission\\purr mission.csproj",
+  "projectFilePath": "C:\\Users\\HP\\Source\\Repos\\purr-mission\\purr mission\\purr mission.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\HP\\.nuget\\packages\\monogame.content.builder.task\\3.8.1.303\\monogame.content.builder.task.3.8.1.303.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\monogame.framework.desktopgl\\3.8.1.303\\monogame.framework.desktopgl.3.8.1.303.nupkg.sha512"

@@ -29,3 +29,4 @@ C:\Users\HP\source\repos\purr-mission\purr mission\bin\Debug\net6.0\Content\alie
 C:\Users\HP\source\repos\purr-mission\purr mission\bin\Debug\net6.0\Content\arial-36-bold.xnb
 C:\Users\HP\source\repos\purr-mission\purr mission\bin\Debug\net6.0\Content\cat.xnb
 C:\Users\HP\source\repos\purr-mission\purr mission\bin\Debug\net6.0\Content\bullet.xnb
+C:\Users\HP\Source\Repos\purr-mission\purr mission\bin\Debug\net6.0\Content\small alien.xnb

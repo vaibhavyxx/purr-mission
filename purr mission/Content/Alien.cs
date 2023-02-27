@@ -18,6 +18,10 @@ namespace purr_mission.Content
     {
         private int windowHeight;
         private int windowWidth;
+
+        //to calculate amount of distance covered per gametime
+        private int xDelta;             
+        private int yDelta;
         public Alien(Texture2D asset, Vector2 position, int windowHeight, int windowWidth) : base(asset, position)
         {
             this.asset = asset;
@@ -26,36 +30,26 @@ namespace purr_mission.Content
             this.windowWidth = windowWidth;
         }
 
+        //BOUNCE ISSUE not happening
         public override void Update(GameTime gameTime)
         {
-            //decides the speed of aliens movements
-            position.X += 20;
-            position.Y += 25;
+            //basic idea
+            //moves goes right when x=0 till x= is the windows width
+            //now that it has reached window width- we want it to reverse its direction 
 
-            //TODO: Add movement here to ensure that they are still in the room and not going out- like boucing
-            //to support oncreen wrapping of the sprite
-            if ((position.Y + asset.Height) < 0)
+            if(position.X < windowWidth- asset.Width && 
+               position.X >=0)
             {
-                //brings sprite from bottom
-                position.Y = windowHeight;
+                xDelta = 10;
+            }
+            else if(position.X < 0 &&
+                    position.X > windowWidth - windowWidth)
+            {
+                xDelta = -10;
+            }
+            position.X += xDelta;
 
-            }
-            else if (position.Y > windowHeight)
-            {
-                //brings sprite from top
-                position.Y = -asset.Height;
-            }
-            if ((position.X + asset.Width) < 0)
-            {
-                //brings sprite from right
-                position.X = windowWidth;
-            }
-            else if (position.X > windowWidth)
-            {
-                //brings sprite from left
-                position.X = 0 - asset.Width;
-            }
-            //throw new NotImplementedException();
+            
         }
 
         /// <summary>

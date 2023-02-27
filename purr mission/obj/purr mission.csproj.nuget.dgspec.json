@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\HP\\source\\repos\\purr-mission\\purr mission\\purr mission.csproj": {}
+    "C:\\Users\\HP\\Source\\Repos\\purr-mission\\purr mission\\purr mission.csproj": {}
   },
   "projects": {
-    "C:\\Users\\HP\\source\\repos\\purr-mission\\purr mission\\purr mission.csproj": {
+    "C:\\Users\\HP\\Source\\Repos\\purr-mission\\purr mission\\purr mission.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HP\\source\\repos\\purr-mission\\purr mission\\purr mission.csproj",
+        "projectUniqueName": "C:\\Users\\HP\\Source\\Repos\\purr-mission\\purr mission\\purr mission.csproj",
         "projectName": "purr mission",
-        "projectPath": "C:\\Users\\HP\\source\\repos\\purr-mission\\purr mission\\purr mission.csproj",
+        "projectPath": "C:\\Users\\HP\\Source\\Repos\\purr-mission\\purr mission\\purr mission.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HP\\source\\repos\\purr-mission\\purr mission\\obj\\",
+        "outputPath": "C:\\Users\\HP\\Source\\Repos\\purr-mission\\purr mission\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",

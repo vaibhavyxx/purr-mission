@@ -84,10 +84,13 @@ namespace purr_mission
             //so that we can use 5 aliens at the same time
             for(int i=0; i< 5; i++)
             {
-                tex_alien = Content.Load<Texture2D>("alien");
+                tex_alien = Content.Load<Texture2D>("small alien");
                 //tex2dList_aliens.Add(tex_alien);
-                vec_alien = new Vector2(rng.Next(tex_alien.Width, windowWidth),         //to ensure that the alien loaded is visible on the screen 
-                                         rng.Next(tex_alien.Height, windowHeight));
+                vec_alien = new Vector2(rng.Next(0,                         //lower limit
+                                        windowWidth - tex_alien.Width),     //upper limit
+                                        
+                                         rng.Next(0,                        //lower limit
+                                         windowHeight - tex_alien.Height)); //upper limit
                 vecList_aliens.Add(vec_alien);
 
                 //saves the data into alien list
